@@ -112,3 +112,7 @@ export default function Home() {
     </>
   )
 }
+
+Home.getInitialProps = (ctx) => {
+  return { url: ctx.req.url };
+};
