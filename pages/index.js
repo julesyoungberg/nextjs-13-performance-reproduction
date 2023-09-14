@@ -19,6 +19,9 @@ export default function Home({ animal }) {
           </li>
         ))}
       </ul>
+      {new Array(1000).fill(0).map((_, idx) => (
+        <div key={idx}>Dummy Div {idx}</div>
+      ))}
     </>
   )
 }
