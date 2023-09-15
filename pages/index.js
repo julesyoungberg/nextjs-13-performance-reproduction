@@ -22,7 +22,7 @@ export default function Home({ animal }) {
       <br />
       <h2>Dummy Divs</h2>
       {new Array(1000).fill(0).map((_, idx) => (
-        <div key={idx}>{idx}</div>
+        <div key={idx}>{animal ? animal + " " : ""}{idx}</div>
       ))}
     </>
   )
